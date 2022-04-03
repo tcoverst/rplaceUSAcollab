@@ -13,7 +13,7 @@ if (window.top !== window.self) {
             document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(
         (function () {
             const i = document.createElement("img");
-            i.src = "https://github.com/tcoverst/rplaceUSAcollab/blob/67760b1601732e5e407cb83ce6e482e5dedd925e/BIGcollabUSA.png";
+            i.src = "https://raw.githubusercontent.com/tcoverst/rplaceUSAcollab/main/BIGcollabUSA.png";
             i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;";
             console.log(i);
             return i;
