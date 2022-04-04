@@ -15,6 +15,7 @@ if (window.top !== window.self) {
             const i = document.createElement("img");
             i.src = "https://raw.githubusercontent.com/tcoverst/rplaceUSAcollab/main/rplaceUSA.png";
             i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;";
+            i.id = "usaFlagOverlay";
             console.log(i);
             return i;
         })())
@@ -22,3 +23,8 @@ if (window.top !== window.self) {
     }, false);
 
 }
+
+setInterval(function(){
+    // Refresh overlay every 10 minutes
+	document.getElementById("usaFlagOverlay").src = "https://raw.githubusercontent.com/tcoverst/rplaceUSAcollab/main/rplaceUSA.png?t=" + new Date().getTime(); // Cache buster
+}, 600000);
