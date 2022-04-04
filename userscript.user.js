@@ -28,4 +28,4 @@ setInterval(function(){
     // Refresh overlay every 10 minutes
     document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].getElementsByTagName("img")[0].src = "https://raw.githubusercontent.com/tcoverst/rplaceUSAcollab/main/rplaceUSA.png?t=" + new Date().getTime(); // Cache buster
     console.log("Refreshed USA Flag Overlay at " + new Date());
-}, 100000);
+}, 300000);
