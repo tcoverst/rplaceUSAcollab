@@ -26,6 +26,6 @@ if (window.top !== window.self) {
 
 setInterval(function(){
     // Refresh overlay every 10 minutes
-    document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].getElementsByTagName("img")[0].src = "https://s3.us-east-2.amazonaws.com/cdn.danielflanagan/images/rplaceUSA.png?t=" + new Date().getTime(); // Cache buster
+    document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].getElementsByTagName("img")[0].src = "https://raw.githubusercontent.com/tcoverst/rplaceUSAcollab/main/rplaceUSA.png?t=" + new Date().getTime(); // Cache buster
     console.log("Refreshed USA Flag Overlay at " + new Date());
 }, 100000);
