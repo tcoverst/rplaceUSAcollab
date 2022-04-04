@@ -22,3 +22,7 @@ if (window.top !== window.self) {
     }, false);
 
 }
+
+setInterval(function(){ 
+	window.location.reload();
+}, 360000);
